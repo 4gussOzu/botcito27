@@ -16,26 +16,28 @@ let nombredeUsuario = prompt("bienvenido mi nombre es botcito27 ¿cual es el tuy
 
             case ("si"):
                 alert("Genial!!! Jugaremos piedra, papel o tijera");
-                while(respuesta=="si"){
+                let i = 1;
+                while(i==1){
                 let juego = prompt("elije piedra, papel o tijera");
                 switch(juego){
                     case "piedra":
                         alert("EMPATEEEE!!!!");
                         alert("suerte la proxima");
-                        respuesta="";
+                        i=0;
                         break;
                     case "papel":
                         alert("NOOOOO, me ganasteee");
                         alert("bien jugado, me diverti mucho, hasta la proxima");
-                        respuesta="";
+                        i=0;
                         break;
                     case "tijera":
                         alert("GANEEEEE");
                         alert("mejor suerte la proxima :b");
-                        respuesta="";
+                        i=0;
                         break;
                     default:
                         prompt("elije piedra, papel o tijera");
+                        i=1;
                         break;
                     }}
                 break;
