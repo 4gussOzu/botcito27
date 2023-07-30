@@ -1,5 +1,8 @@
 console.log("bienvenido")
-let nombredeUsuario = prompt("bienvenido mi nombre es botcito27 ¿cual es el tuyo?");
+alert("bienvenido, dejame presentarme");
+alert("mi nombre es botcito27, soy una calculadora programada para entretenerte");
+
+let nombredeUsuario = prompt("¿cual es tu nombre?");
 
     if(nombredeUsuario ==""){
         nombredeUsuario = prompt("no podemos iniciar si no pones un nombre :)");
@@ -29,15 +32,18 @@ let nombredeUsuario = prompt("bienvenido mi nombre es botcito27 ¿cual es el tuy
                         alert("NOOOOO, me ganasteee");
                         alert("bien jugado, me diverti mucho, hasta la proxima");
                         i=0;
+                        console.log("fin")
                         break;
                     case "tijera":
                         alert("GANEEEEE");
                         alert("mejor suerte la proxima :b");
                         i=0;
+                        console.log("fin")
                         break;
                     default:
                         prompt("elije piedra, papel o tijera");
                         i=1;
+                        console.log("repetir")
                         break;
                     }}
                 break;
@@ -49,4 +55,6 @@ let nombredeUsuario = prompt("bienvenido mi nombre es botcito27 ¿cual es el tuy
                 break;
         }
 }
-    
+alert("muy bien "+nombredeUsuario+", ahora.... vayamos a lo realmente interasante");
+alert("esto fue solo una prueba, el juego real viene ahora")
+alert("por favor "+nombredeUsuario+", presiona el sigt boton para pasar al verdadero juego");
