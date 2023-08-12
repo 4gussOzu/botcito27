@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>botcito27</title>
-    <!--css-->
-    <link rel="stylesheet" href="styles/stylesJuego.css">
-    <!--icono del juego-->
-    <link rel="icon" href="img/cartel-de-juego.png" />
-</head>
-<body>
-    <div class="container">
-        
-        <h1>Piedra Papel y Tijeras</h1>
-
-        <div id="resultado">
-            <img id="cartel-de-juego" src="img/cartel-de-juego.png">
-            <div id="texto-importante">
-                Elije piedra, papel o tijera
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/stylesJuego.css">
+        <title>Piedra | Papel | Tijerass</title>
+    </head>
+    <body>
+        <h1>Piedra | Papel | Tijeras</h1>
+        <div id="campo-batalla" class="campo-batalla">
+            <div id="img-ataque-jugador" class="caja-batala"><!--<img class="img-batalla" src="img/Papel.PNG" alt="">--></div>
+            <div class="caja-batala"><p class="text-mensajes">VS</p></div>
+            <div id="img-ataque-pc" class="caja-batala"><!--<img class="img-batalla" src="img/Piedra.PNG" alt="">--></div>
         </div>
-
-        <!--botones-->
-        <div id="botones">
-            <button id="piedra" type="button"> <img src="img/piedra.jpg" alt="piedra"></button>
-            <button id="papel" type="button"> <img src="img/papel.jpg" alt="papel"></button>
-            <button id="tijera" type="button"> <img src="img/tijera.jpg" alt="tijera"></button>
+        <h2>Elije un ataque</h2>
+        <div>
+            <img id="btn-piedra" class="btn-ataques" src="img/Piedra.PNG" alt="">
+            <img id="btn-papel" class="btn-ataques" src="img/Papel.PNG" alt="">
+            <img id="btn-tijeras" class="btn-ataques" src="img/Tijeras.PNG" alt="">
         </div>
-        <footer>gracias por jugar :D</footer>
-    </div>
-    
-    <!--js-->
-    <script src="js/juego1.js"></script>
-</body>
+        <script src="js/juego1.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
 </html>
