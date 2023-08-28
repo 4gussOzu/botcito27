@@ -2,23 +2,30 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>botcito27</title>
-    <!--css-->
+    <title>Botcito27</title>
     <link rel="stylesheet" href="styles/stylesMain.css">
+    <link rel="icon" href="img/cartel-de-juego.png">
 </head>
 <body>
-
-    <section>
-        <h1>El verdadero juego comienza</h1>
-    </section>
-
     <div class="container">
-        <button id="boton" type="button"><a href="juego1.html"> <img src="img/botonContinuar.png"> </a></button>
+        <div id="welcomeSection" class="section">
+            <p>Bienvenido, déjame presentarme.</p>
+            <p>Mi nombre es Botcito27, soy una calculadora programada para entretenerte.</p>
+            <button id="startButton">Empezar</button>
+        </div>
+
+        <div id="nameInputSection" class="section hidden">
+            <p>¿Cuál es tu nombre?</p>
+            <input type="text" id="nameInput">
+            <button id="nameSubmitButton">Enviar</button>
+        </div>
+          <!--final de la introduccion, boton de la sigt pag-->
+        <div id="gameSection" class="section hidden">
+            <p id="gameMessage"></p>
+            <button id="boton"class="gameChoiceButton" type="button"><a href="juego1.html"> <img src="img/botonContinuar.png" id="buttonContinue"> </a></button>
+        </div>
     </div>
-    <!--js-->
     <script src="js/index.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
